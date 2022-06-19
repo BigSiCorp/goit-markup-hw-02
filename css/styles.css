@@ -1,0 +1,90 @@
+:root {
+    --title-text-color: #212121;
+    --secondary-text-color: #2196f3;
+}
+
+body {
+    color: #757575;
+    background-color: #2F303A;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+header {
+    background-color: #ffffff;
+}
+.logo {
+    color: var(--secondary-text-color);
+}
+
+/* site-nav*/
+.site-nav a {
+    color: var(--title-text-color);
+}
+.site-nav .current {
+    color: var(--secondary-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--secondary-text-color);
+}
+
+/* auth-nav */
+a[href="mailto:info@devstudio.com"] {
+    color: var(--secondary-text-color);
+}
+a[href="tel:+380961111111"] {
+    color: #757575;
+}
+
+/* section titles */
+h1 {
+    color: #ffffff;
+}
+.section-title,
+.subtitle {
+    color: var(--title-text-color);
+}
+
+/* sections */
+.advantages {
+    background-color: #e5e5e5;
+}
+.team {
+    background-color: #f5f4fa;
+}
+
+button {
+    color: #ffffff;
+    background-color: var(--secondary-text-color);
+}
+
+/* footer */
+.map {
+    color: #ffffff;
+}
+address a {
+    color: rgba(255, 255, 255, 0.6);
+}
+.map:hover,
+.map:focus,
+.auth-nav a:hover,
+.auth-nav a:focus,
+.contact:hover,
+.contact:focus {
+        color: var(--secondary-text-color);
+}
+
+
+
+
+/* заголовки #212121 */
+/* текст #757575 */
+/* голубой текст #2196f3 */
+/* footer address #ffffff */
+/* footer contacts rgba(255, 255, 255, .6)*/
