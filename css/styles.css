@@ -6,7 +6,9 @@
 body {
     color: #757575;
     background-color: #2F303A;
-    list-style: none;
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 ul {
@@ -19,36 +21,94 @@ header {
 }
 .logo {
     color: var(--secondary-text-color);
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 /* site-nav*/
+.site-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
 .site-nav a {
     color: var(--title-text-color);
 }
 .site-nav .current {
     color: var(--secondary-text-color);
 }
-
 .site-nav a:hover,
 .site-nav a:focus {
     color: var(--secondary-text-color);
 }
 
 /* auth-nav */
+.auth-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
 a[href="mailto:info@devstudio.com"] {
     color: var(--secondary-text-color);
 }
 a[href="tel:+380961111111"] {
     color: #757575;
 }
+a[href="mailto:info@devstudio.com"]:hover,
+a[href="mailto:info@devstudio.com"]:focus {
+    color: #757575;
+}
+a[href="tel:+380961111111"]:hover,
+a[href="tel:+380961111111"]:focus {
+    color: var(--secondary-text-color);
+}
+
+main.portfolio-page {
+    background-color: #e5e5e5;
+}
 
 /* section titles */
-h1 {
+.hero h1 {
     color: #ffffff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.portfolio-page .subtitle {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.section .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 .section-title,
 .subtitle {
     color: var(--title-text-color);
+    font-weight: 700;
+}
+.advantages .subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.team .subtitle {
+    font-weight: 500;
+}
+.team .subtitle,
+.section.team p {
+    font-size: 16px;
+    line-height: 1.19px;
+    text-align: center;
 }
 
 /* sections */
@@ -58,8 +118,35 @@ h1 {
 .team {
     background-color: #f5f4fa;
 }
+.section.advantages p {
+    font-size: 14px;
+    line-height: 1.71;
+}
+.portfolio-page p {
+    font-size: 16px;
+    line-height: 1.88;
+}
 
+/* buttons */
+.button-main {
+    color: #ffffff;
+    background-color: var(--secondary-text-color);
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+        }
 button {
+    color: var(--title-text-color);
+    background-color: #f5f4fa;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: inherit;
+    text-align: center;
+}
+button:hover,
+button:focus {
     color: #ffffff;
     background-color: var(--secondary-text-color);
 }
@@ -70,11 +157,12 @@ button {
 }
 address a {
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
 .map:hover,
 .map:focus,
-.auth-nav a:hover,
-.auth-nav a:focus,
 .contact:hover,
 .contact:focus {
         color: var(--secondary-text-color);
