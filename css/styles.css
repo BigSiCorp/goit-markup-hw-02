@@ -25,17 +25,17 @@ header {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    text-decoration: none;
 }
 
 /* site-nav*/
-.site-nav {
+.site-nav a {
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    }
-.site-nav a {
-    color: var(--title-text-color);
+    text-decoration: none;
 }
 .site-nav .current {
     color: var(--secondary-text-color);
@@ -46,25 +46,22 @@ header {
 }
 
 /* auth-nav */
-.auth-nav {
+.auth-nav a {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
-a[href="mailto:info@devstudio.com"] {
-    color: var(--secondary-text-color);
-}
-a[href="tel:+380961111111"] {
-    color: #757575;
-}
-a[href="mailto:info@devstudio.com"]:hover,
-a[href="mailto:info@devstudio.com"]:focus {
-    color: #757575;
-}
+a[href="mailto:info@devstudio.com"],
 a[href="tel:+380961111111"]:hover,
 a[href="tel:+380961111111"]:focus {
     color: var(--secondary-text-color);
+}
+a[href="tel:+380961111111"],
+a[href="mailto:info@devstudio.com"]:hover,
+a[href="mailto:info@devstudio.com"]:focus {
+    color: #757575;
 }
 
 main.portfolio-page {
@@ -85,7 +82,7 @@ main.portfolio-page {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-}
+    }
 .section .section-title {
     font-size: 36px;
     line-height: 1.17;
@@ -122,10 +119,14 @@ main.portfolio-page {
     font-size: 14px;
     line-height: 1.71;
 }
+.portfolio-page a {
+    text-decoration: none;
+}
 .portfolio-page p {
+    color: #757575;
     font-size: 16px;
     line-height: 1.88;
-}
+    }
 
 /* buttons */
 .button-main {
@@ -144,6 +145,7 @@ button {
     line-height: 1.62;
     letter-spacing: inherit;
     text-align: center;
+    cursor: pointer;
 }
 button:hover,
 button:focus {
@@ -160,6 +162,7 @@ address a {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    text-decoration: none;
 }
 .map:hover,
 .map:focus,
@@ -167,12 +170,3 @@ address a {
 .contact:focus {
         color: var(--secondary-text-color);
 }
-
-
-
-
-/* заголовки #212121 */
-/* текст #757575 */
-/* голубой текст #2196f3 */
-/* footer address #ffffff */
-/* footer contacts rgba(255, 255, 255, .6)*/
